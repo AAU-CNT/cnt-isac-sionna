@@ -1,0 +1,484 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12"/>
+	</integrator>
+
+<!-- Materials -->
+
+	<bsdf type="diffuse" id="mat-itu_brick" name="mat-itu_brick">
+		<rgb value="1.000000 0.500000 0.200000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-itu_wood" name="mat-itu_wood">
+		<rgb value="0.290000 0.250000 0.210000" name="reflectance"/>
+	</bsdf>
+
+<!-- Emitters -->
+
+	<emitter type="directional" id="emit-Sun" name="emit-Sun">
+		<rgb value="1.000000 1.000000 1.000000" name="irradiance"/>
+		<transform name="to_world">
+			<matrix value="1.000000 0.000000 0.000000 42.952316 0.000000 3.218085 0.000000 -14.642031 0.000000 0.000000 -1.000000 108.393799 0.000000 0.000000 0.000000 1.000000"/>
+		</transform>
+	</emitter>
+	<emitter type="point" id="emit-Light" name="emit-Light">
+		<point name="position" x="78.37248229980469" y="33.66269302368164" z="30.0"/>
+		<rgb value="79.577469 79.577469 79.577469" name="intensity"/>
+	</emitter>
+
+<!-- Shapes -->
+
+	<shape type="ply" id="mesh-element-itu_brick" name="mesh-element-itu_brick">
+		<string name="filename" value="meshes/element-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element-itu_wood" name="mesh-element-itu_wood">
+		<string name="filename" value="meshes/element-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_001-itu_brick" name="mesh-element_001-itu_brick">
+		<string name="filename" value="meshes/element_001-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_001-itu_wood" name="mesh-element_001-itu_wood">
+		<string name="filename" value="meshes/element_001-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_002-itu_brick" name="mesh-element_002-itu_brick">
+		<string name="filename" value="meshes/element_002-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_002-itu_wood" name="mesh-element_002-itu_wood">
+		<string name="filename" value="meshes/element_002-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_003-itu_brick" name="mesh-element_003-itu_brick">
+		<string name="filename" value="meshes/element_003-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_003-itu_wood" name="mesh-element_003-itu_wood">
+		<string name="filename" value="meshes/element_003-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_004-itu_brick" name="mesh-element_004-itu_brick">
+		<string name="filename" value="meshes/element_004-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_004-itu_wood" name="mesh-element_004-itu_wood">
+		<string name="filename" value="meshes/element_004-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_005-itu_brick" name="mesh-element_005-itu_brick">
+		<string name="filename" value="meshes/element_005-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_005-itu_wood" name="mesh-element_005-itu_wood">
+		<string name="filename" value="meshes/element_005-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_006-itu_brick" name="mesh-element_006-itu_brick">
+		<string name="filename" value="meshes/element_006-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_006-itu_wood" name="mesh-element_006-itu_wood">
+		<string name="filename" value="meshes/element_006-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_007-itu_brick" name="mesh-element_007-itu_brick">
+		<string name="filename" value="meshes/element_007-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_007-itu_wood" name="mesh-element_007-itu_wood">
+		<string name="filename" value="meshes/element_007-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_008-itu_brick" name="mesh-element_008-itu_brick">
+		<string name="filename" value="meshes/element_008-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_008-itu_wood" name="mesh-element_008-itu_wood">
+		<string name="filename" value="meshes/element_008-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_009-itu_brick" name="mesh-element_009-itu_brick">
+		<string name="filename" value="meshes/element_009-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_009-itu_wood" name="mesh-element_009-itu_wood">
+		<string name="filename" value="meshes/element_009-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_010-itu_brick" name="mesh-element_010-itu_brick">
+		<string name="filename" value="meshes/element_010-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_010-itu_wood" name="mesh-element_010-itu_wood">
+		<string name="filename" value="meshes/element_010-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_011-itu_brick" name="mesh-element_011-itu_brick">
+		<string name="filename" value="meshes/element_011-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_011-itu_wood" name="mesh-element_011-itu_wood">
+		<string name="filename" value="meshes/element_011-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_012-itu_brick" name="mesh-element_012-itu_brick">
+		<string name="filename" value="meshes/element_012-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_012-itu_wood" name="mesh-element_012-itu_wood">
+		<string name="filename" value="meshes/element_012-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_013-itu_brick" name="mesh-element_013-itu_brick">
+		<string name="filename" value="meshes/element_013-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_013-itu_wood" name="mesh-element_013-itu_wood">
+		<string name="filename" value="meshes/element_013-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_014-itu_brick" name="mesh-element_014-itu_brick">
+		<string name="filename" value="meshes/element_014-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_014-itu_wood" name="mesh-element_014-itu_wood">
+		<string name="filename" value="meshes/element_014-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_015-itu_brick" name="mesh-element_015-itu_brick">
+		<string name="filename" value="meshes/element_015-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_015-itu_wood" name="mesh-element_015-itu_wood">
+		<string name="filename" value="meshes/element_015-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_016-itu_brick" name="mesh-element_016-itu_brick">
+		<string name="filename" value="meshes/element_016-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_016-itu_wood" name="mesh-element_016-itu_wood">
+		<string name="filename" value="meshes/element_016-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_017-itu_brick" name="mesh-element_017-itu_brick">
+		<string name="filename" value="meshes/element_017-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_017-itu_wood" name="mesh-element_017-itu_wood">
+		<string name="filename" value="meshes/element_017-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_018-itu_brick" name="mesh-element_018-itu_brick">
+		<string name="filename" value="meshes/element_018-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_018-itu_wood" name="mesh-element_018-itu_wood">
+		<string name="filename" value="meshes/element_018-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_019-itu_brick" name="mesh-element_019-itu_brick">
+		<string name="filename" value="meshes/element_019-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_019-itu_wood" name="mesh-element_019-itu_wood">
+		<string name="filename" value="meshes/element_019-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_020-itu_brick" name="mesh-element_020-itu_brick">
+		<string name="filename" value="meshes/element_020-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_020-itu_wood" name="mesh-element_020-itu_wood">
+		<string name="filename" value="meshes/element_020-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_021-itu_brick" name="mesh-element_021-itu_brick">
+		<string name="filename" value="meshes/element_021-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_021-itu_wood" name="mesh-element_021-itu_wood">
+		<string name="filename" value="meshes/element_021-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_022-itu_brick" name="mesh-element_022-itu_brick">
+		<string name="filename" value="meshes/element_022-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_022-itu_wood" name="mesh-element_022-itu_wood">
+		<string name="filename" value="meshes/element_022-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_023-itu_brick" name="mesh-element_023-itu_brick">
+		<string name="filename" value="meshes/element_023-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_023-itu_wood" name="mesh-element_023-itu_wood">
+		<string name="filename" value="meshes/element_023-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_024-itu_brick" name="mesh-element_024-itu_brick">
+		<string name="filename" value="meshes/element_024-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_024-itu_wood" name="mesh-element_024-itu_wood">
+		<string name="filename" value="meshes/element_024-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_025-itu_brick" name="mesh-element_025-itu_brick">
+		<string name="filename" value="meshes/element_025-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_025-itu_wood" name="mesh-element_025-itu_wood">
+		<string name="filename" value="meshes/element_025-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_026-itu_brick" name="mesh-element_026-itu_brick">
+		<string name="filename" value="meshes/element_026-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_026-itu_wood" name="mesh-element_026-itu_wood">
+		<string name="filename" value="meshes/element_026-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_027-itu_brick" name="mesh-element_027-itu_brick">
+		<string name="filename" value="meshes/element_027-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_027-itu_wood" name="mesh-element_027-itu_wood">
+		<string name="filename" value="meshes/element_027-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_028-itu_brick" name="mesh-element_028-itu_brick">
+		<string name="filename" value="meshes/element_028-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_028-itu_wood" name="mesh-element_028-itu_wood">
+		<string name="filename" value="meshes/element_028-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_029-itu_brick" name="mesh-element_029-itu_brick">
+		<string name="filename" value="meshes/element_029-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_029-itu_wood" name="mesh-element_029-itu_wood">
+		<string name="filename" value="meshes/element_029-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_030-itu_brick" name="mesh-element_030-itu_brick">
+		<string name="filename" value="meshes/element_030-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_030-itu_wood" name="mesh-element_030-itu_wood">
+		<string name="filename" value="meshes/element_030-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_031-itu_brick" name="mesh-element_031-itu_brick">
+		<string name="filename" value="meshes/element_031-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_031-itu_wood" name="mesh-element_031-itu_wood">
+		<string name="filename" value="meshes/element_031-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_048-itu_brick" name="mesh-element_048-itu_brick">
+		<string name="filename" value="meshes/element_048-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_048-itu_wood" name="mesh-element_048-itu_wood">
+		<string name="filename" value="meshes/element_048-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_050-itu_brick" name="mesh-element_050-itu_brick">
+		<string name="filename" value="meshes/element_050-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_050-itu_wood" name="mesh-element_050-itu_wood">
+		<string name="filename" value="meshes/element_050-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_051-itu_brick" name="mesh-element_051-itu_brick">
+		<string name="filename" value="meshes/element_051-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_051-itu_wood" name="mesh-element_051-itu_wood">
+		<string name="filename" value="meshes/element_051-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_052-itu_brick" name="mesh-element_052-itu_brick">
+		<string name="filename" value="meshes/element_052-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_052-itu_wood" name="mesh-element_052-itu_wood">
+		<string name="filename" value="meshes/element_052-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_053-itu_brick" name="mesh-element_053-itu_brick">
+		<string name="filename" value="meshes/element_053-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_053-itu_wood" name="mesh-element_053-itu_wood">
+		<string name="filename" value="meshes/element_053-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_054-itu_brick" name="mesh-element_054-itu_brick">
+		<string name="filename" value="meshes/element_054-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_054-itu_wood" name="mesh-element_054-itu_wood">
+		<string name="filename" value="meshes/element_054-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_055-itu_brick" name="mesh-element_055-itu_brick">
+		<string name="filename" value="meshes/element_055-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_055-itu_wood" name="mesh-element_055-itu_wood">
+		<string name="filename" value="meshes/element_055-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_056-itu_wood" name="mesh-element_056-itu_wood">
+		<string name="filename" value="meshes/element_056-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_056-itu_brick" name="mesh-element_056-itu_brick">
+		<string name="filename" value="meshes/element_056-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_057-itu_wood" name="mesh-element_057-itu_wood">
+		<string name="filename" value="meshes/element_057-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_057-itu_brick" name="mesh-element_057-itu_brick">
+		<string name="filename" value="meshes/element_057-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_058-itu_wood" name="mesh-element_058-itu_wood">
+		<string name="filename" value="meshes/element_058-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_058-itu_brick" name="mesh-element_058-itu_brick">
+		<string name="filename" value="meshes/element_058-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_059-itu_wood" name="mesh-element_059-itu_wood">
+		<string name="filename" value="meshes/element_059-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_059-itu_brick" name="mesh-element_059-itu_brick">
+		<string name="filename" value="meshes/element_059-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_060-itu_wood" name="mesh-element_060-itu_wood">
+		<string name="filename" value="meshes/element_060-itu_wood.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_wood" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-element_060-itu_brick" name="mesh-element_060-itu_brick">
+		<string name="filename" value="meshes/element_060-itu_brick.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-Plane" name="mesh-Plane">
+		<string name="filename" value="meshes/Plane.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-itu_brick" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>

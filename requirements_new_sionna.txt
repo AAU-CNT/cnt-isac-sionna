@@ -1,0 +1,8 @@
+numpy
+sionna==1.2.1
+atomicwrites
+intervaltree
+spyder-kernels==3.0.*
+matplotlib
+plotly
+scikit-learn
