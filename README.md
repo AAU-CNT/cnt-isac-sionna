@@ -4,8 +4,8 @@ Repo for work on sionna within the ISAC sub-group.
 
 ## Structure
 
-- ```DT-reliability``` contains the code for the 
-[Prediction of Wireless Channel Statistics with Ray Tracing and Uncalibrated Digital Twin](https://arxiv.org/abs/2411.13360)
+- ```DT-reliability``` contains the code for the
+[Digital Twin-Guided Wireless Localization via Probabilistic Inverse Learning](https://arxiv.org/abs/2610.36905v1)
 letter.
 - ```DT-selection``` contains code for the DT assisted sensor location selection paper.
 - ```scenario``` contains a mitsuba scene for the location outside the kantine at FBV7.
